@@ -6,7 +6,6 @@ import { HTMLLoader } from './utils/html-loader.js';
 import { Navigation } from './components/navigation.js';
 import { AnimatedCounter } from './components/counter.js';
 import { Tabs } from './components/tabs.js';
-import { Slider } from './components/slider.js';
 import { NewsletterForm } from './components/newsletter.js';
 import { ToastNotification } from './services/notification.js';
 import { EmailValidator } from './services/validator.js';
@@ -40,7 +39,6 @@ async function initializeApp() {
             .register('navigation', () => new Navigation())
             .register('counter', () => new AnimatedCounter())
             .register('tabs', () => new Tabs())
-            .register('slider', () => new Slider())
             .register('newsletter', () => new NewsletterForm(
                 '[data-component="newsletter-form"]',
                 validator,
