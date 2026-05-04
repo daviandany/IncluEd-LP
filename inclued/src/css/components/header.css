@@ -1,0 +1,123 @@
+/* Header */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: var(--z-sticky);
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--color-gray-100);
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary-700);
+}
+
+.header__logo-icon {
+    font-size: var(--font-size-2xl);
+}
+
+.header__menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: var(--space-2);
+    border-radius: var(--radius-md);
+}
+
+.header__menu-toggle:hover {
+    background-color: var(--color-gray-100);
+}
+
+.header__menu-toggle:focus-visible {
+    outline: 2px solid var(--color-primary-500);
+    outline-offset: 2px;
+}
+
+.header__menu-bar {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--color-gray-700);
+    border-radius: var(--radius-full);
+    transition: all var(--transition-base);
+}
+
+.header__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-gray-100);
+    padding: var(--space-4);
+    box-shadow: var(--shadow-lg);
+}
+
+.header__menu.is-open {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.header__link {
+    display: block;
+    padding: var(--space-3) var(--space-4);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-gray-600);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+}
+
+.header__link:hover,
+.header__link:focus-visible {
+    color: var(--color-primary-600);
+    background-color: var(--color-primary-50);
+}
+
+.header__link--cta {
+    background-color: var(--color-primary-600);
+    color: var(--color-white);
+    text-align: center;
+}
+
+.header__link--cta:hover,
+.header__link--cta:focus-visible {
+    background-color: var(--color-primary-700);
+    color: var(--color-white);
+}
+
+@media (min-width: 768px) {
+    .header__menu-toggle {
+        display: none;
+    }
+
+    .header__menu {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        align-items: center;
+        gap: var(--space-1);
+        padding: 0;
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+
+    .header__link {
+        padding: var(--space-2) var(--space-4);
+    }
+}

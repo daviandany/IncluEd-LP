@@ -1,0 +1,98 @@
+/* Hero */
+.hero {
+    position: relative;
+    padding: var(--space-16) 0;
+    background: linear-gradient(135deg, var(--color-primary-50) 0%, var(--color-white) 50%, var(--color-primary-50) 100%);
+    overflow: hidden;
+}
+
+.hero__container {
+    display: grid;
+    gap: var(--space-12);
+    align-items: center;
+}
+
+.hero__title {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-extrabold);
+    line-height: var(--line-height-tight);
+    color: var(--color-gray-900);
+    letter-spacing: -0.025em;
+}
+
+.hero__highlight {
+    color: var(--color-primary-600);
+    position: relative;
+}
+
+.hero__highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background-color: var(--color-primary-200);
+    z-index: -1;
+    border-radius: var(--radius-sm);
+}
+
+.hero__description {
+    margin-top: var(--space-6);
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-relaxed);
+    color: var(--color-gray-600);
+    max-width: 540px;
+}
+
+.hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    margin-top: var(--space-8);
+}
+
+.hero__stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+    margin-top: var(--space-12);
+    padding-top: var(--space-8);
+    border-top: 1px solid var(--color-gray-200);
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item__number {
+    display: block;
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-extrabold);
+    color: var(--color-primary-600);
+    line-height: var(--line-height-tight);
+}
+
+.stat-item__label {
+    display: block;
+    margin-top: var(--space-1);
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-500);
+    font-weight: var(--font-weight-medium);
+}
+
+@media (min-width: 1024px) {
+    .hero__container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero__title {
+        font-size: var(--font-size-5xl);
+    }
+}
+
+@media (min-width: 1280px) {
+    .hero__title {
+        font-size: var(--font-size-6xl);
+    }
+}
