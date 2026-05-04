@@ -1,0 +1,12 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="4" y="4" width="120" height="120" rx="22" fill="#F7F7F7"/>
+  <circle cx="64" cy="64" r="34" stroke="#2F80ED" stroke-width="14" stroke-dasharray="54 160" stroke-linecap="round" transform="rotate(210 64 64)"/>
+  <circle cx="64" cy="64" r="34" stroke="#F2C94C" stroke-width="14" stroke-dasharray="54 160" stroke-linecap="round" transform="rotate(120 64 64)"/>
+  <circle cx="64" cy="64" r="34" stroke="#EB5757" stroke-width="14" stroke-dasharray="54 160" stroke-linecap="round" transform="rotate(30 64 64)"/>
+  <circle cx="64" cy="64" r="34" stroke="#6FCF97" stroke-width="14" stroke-dasharray="54 160" stroke-linecap="round" transform="rotate(300 64 64)"/>
+  <circle cx="64" cy="50" r="7" fill="#2D9CDB"/>
+  <path d="M64 58L84 82H44L64 58Z" fill="#2D9CDB"/>
+  <path d="M64 20L67 27H74L68.5 31.5L70.5 39L64 34.5L57.5 39L59.5 31.5L54 27H61L64 20Z" fill="#F2C94C"/>
+  <path d="M36 30L37.5 34H42L38 36.5L39.5 41L36 38.5L32.5 41L34 36.5L30 34H34.5L36 30Z" fill="#2F80ED"/>
+  <path d="M92 34L93.5 38H98L94 40.5L95.5 45L92 42.5L88.5 45L90 40.5L86 38H90.5L92 34Z" fill="#EB5757"/>
+</svg>
