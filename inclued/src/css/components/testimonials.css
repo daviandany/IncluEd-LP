@@ -10,6 +10,7 @@
 .section-header--center { text-align: center; max-width: 780px; margin-left: auto; margin-right: auto; }
 .section-header__title { font-size: clamp(2rem, 3.2vw, 3rem); line-height: 1.1; letter-spacing: -0.02em; }
 .section-header__subtitle { margin-top: var(--space-3); color: var(--color-gray-600); font-size: var(--font-size-xl); }
+.section-header__tag { font-size: var(--font-size-base); font-weight: var(--font-weight-bold); }
 
 .audience-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-6); }
 .audience-card { background: #fff; border: 1px solid #ddd8ef; border-radius: 28px; padding: var(--space-6); box-shadow: var(--shadow-xl); }
@@ -35,3 +36,6 @@
 
 @media (max-width: 1024px) { .features__grid, .features__grid--steps, .audience-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 640px) { .features__grid, .features__grid--steps, .audience-grid { grid-template-columns: 1fr; } }
+
+
+.feature-item:hover { transform: translateY(-4px); box-shadow: var(--shadow-xl); }
