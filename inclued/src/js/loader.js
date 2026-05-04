@@ -18,7 +18,7 @@ async function initializeApp() {
     try {
         // 1. Carregar componentes HTML
         await HTMLLoader.loadAll([
-            { path: 'src/html/components/header.html', selector: 'body' },
+            { path: 'src/html/components/header.html', selector: '#header-slot' },
             { path: 'src/html/components/hero.html', selector: 'main' },
             { path: 'src/html/components/about.html', selector: 'main' },
             { path: 'src/html/components/features.html', selector: 'main' },
