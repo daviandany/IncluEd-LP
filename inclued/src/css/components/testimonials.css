@@ -16,11 +16,15 @@
 .audience-card__icon { width: 64px; height: 64px; border-radius: 16px; display:flex; align-items:center; justify-content:center; font-size: 1.8rem; margin-bottom: var(--space-4); color: #fff; }
 .audience-card--students .audience-card__icon { background: linear-gradient(135deg,#7c3aed,#9333ea); }
 .audience-card--teachers .audience-card__icon { background: linear-gradient(135deg,#0ea5a4,#10b981); }
+.audience-card--schools .audience-card__icon { background: linear-gradient(135deg,#f59e0b,#f97316); }
+.audience-card--families .audience-card__icon { background: linear-gradient(135deg,#ec4899,#db2777); }
 .audience-card h3 { font-size: clamp(2rem, 2.3vw, 2.5rem); margin-bottom: var(--space-2); }
 .audience-card__lead { color: #5b21b6; font-weight: var(--font-weight-bold); margin-bottom: var(--space-4); }
 .audience-card p { color: var(--color-gray-700); line-height: 1.7; }
 .audience-card__benefits { margin-top: var(--space-5); padding: var(--space-4); border-radius: var(--radius-xl); background: #f1edff; }
 .audience-card--teachers .audience-card__benefits { background: #e8f8f4; }
+.audience-card--schools .audience-card__benefits { background: #f8f3df; }
+.audience-card--families .audience-card__benefits { background: #f9e9ef; }
 .audience-card__benefits h4 { text-transform: uppercase; letter-spacing: .08em; font-size: .8rem; margin-bottom: var(--space-2); color: var(--color-gray-600); }
 .audience-card__benefits ul { list-style: disc; padding-left: var(--space-5); }
 .audience-card__benefits li { margin-bottom: var(--space-2); font-weight: var(--font-weight-semibold); }
