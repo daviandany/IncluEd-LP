@@ -33,6 +33,7 @@
 
     /* Tipografia */
     --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-family-heading: 'Manrope', 'Inter', system-ui, -apple-system, sans-serif;
     --font-size-xs: 0.75rem;
     --font-size-sm: 0.875rem;
     --font-size-base: 1rem;
@@ -95,6 +96,17 @@
     --transition-fast: 150ms ease;
     --transition-base: 250ms ease;
     --transition-slow: 350ms ease;
+
+
+
+    /* Design System - Semânticos */
+    --surface-default: var(--color-white);
+    --surface-subtle: #f8fbff;
+    --surface-elevated: #ffffff;
+    --border-soft: var(--color-gray-100);
+    --border-strong: var(--color-primary-200);
+    --shadow-card: 0 14px 30px -18px rgba(79, 70, 229, 0.35);
+    --shadow-floating: 0 18px 40px -20px rgba(55, 48, 163, 0.45);
 
     /* Container */
     --container-max: 1200px;
