@@ -24,12 +24,24 @@
 .feature-item h3 { margin-bottom: var(--space-3); }
 .feature-item p { color: var(--color-gray-700); line-height: var(--line-height-relaxed); }
 
-.faq-list p {
+.faq-item {
     background: var(--color-gray-50);
     border: 1px solid var(--color-gray-100);
     border-radius: var(--radius-xl);
     padding: var(--space-4);
     margin-bottom: var(--space-3);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+}
+
+.faq-item p {
+    margin-top: var(--space-3);
+    color: var(--color-gray-700);
+    line-height: var(--line-height-relaxed);
 }
 
 @media (max-width: 1024px) {
