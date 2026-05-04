@@ -56,6 +56,16 @@ ul, ol {
     list-style: none;
 }
 
+h1, h2, h3, h4 {
+    font-family: var(--font-family-heading);
+    letter-spacing: -0.02em;
+    color: var(--color-gray-900);
+}
+
+p, li, a, button, input {
+    font-family: var(--font-family);
+}
+
 /* Acessibilidade */
 .skip-link {
     position: absolute;
