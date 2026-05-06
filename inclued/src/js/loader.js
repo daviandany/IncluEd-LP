@@ -1,22 +1,11 @@
 /**
- * Carregador de componentes e inicializador da aplicação
+ * Carrega componentes HTML da landing page.
  */
 
 import { HTMLLoader } from './utils/html-loader.js';
-import { Navigation } from './components/navigation.js';
-import { AnimatedCounter } from './components/counter.js';
-import { Tabs } from './components/tabs.js';
-import { NewsletterForm } from './components/newsletter.js';
-import { ToastNotification } from './services/notification.js';
-import { EmailValidator } from './services/validator.js';
-import { Application } from './app.js';
 
-/**
- * Carrega componentes HTML e inicializa aplicação
- */
-async function initializeApp() {
+async function initializeLandingPage() {
     try {
-        // 1. Carregar componentes HTML
         await HTMLLoader.loadAll([
             { path: 'src/html/components/header.html', selector: '#header-slot' },
             { path: 'src/html/components/hero.html', selector: 'main' },
@@ -27,34 +16,14 @@ async function initializeApp() {
             { path: 'src/html/components/footer.html', selector: 'body' },
         ]);
 
-        console.log('✓ Componentes HTML carregados');
-
-        // 2. Inicializar aplicação JavaScript
-        const validator = new EmailValidator();
-        const notification = new ToastNotification();
-
-        const app = new Application();
-
-        app
-            .register('navigation', () => new Navigation())
-            .register('counter', () => new AnimatedCounter())
-            .register('tabs', () => new Tabs())
-            .register('newsletter', () => new NewsletterForm(
-                '[data-component="newsletter-form"]',
-                validator,
-                notification
-            ));
-
-        app.init();
-
+        console.log('✓ Landing page carregada');
     } catch (error) {
-        console.error('Erro ao inicializar aplicação:', error);
+        console.error('Erro ao carregar landing page:', error);
     }
 }
 
-// Iniciar quando DOM estiver pronto
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initializeApp);
+    document.addEventListener('DOMContentLoaded', initializeLandingPage);
 } else {
-    initializeApp();
+    initializeLandingPage();
 }
